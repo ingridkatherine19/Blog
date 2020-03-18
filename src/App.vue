@@ -1,22 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <TextEditor id="myeditor"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import TextEditor from './components/TextEditor.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    TextEditor,
   },
 };
 </script>
 
 <style>
+body {
+  background-color: darkcyan;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -24,5 +26,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+#myeditor {
+  background-color: white;
 }
 </style>
